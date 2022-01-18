@@ -1,8 +1,8 @@
 # Kaggle：Automatic-Speech-Recognition  
 使用CTC LOSS  
 以Python撰寫  
-> training：main.ipynb  
-> testing：test.ipynb  
+> [Training model](main.ipynb)
+> [Testing](test.ipynb)
 
 步驟
 --
@@ -21,8 +21,10 @@
     CUDA = 11.2  
     Keras = 2.6  
     librosa  
-    其他 : requirements.txt  
-    建立環境 pip install -r requirements.txt  
+    其他常用lib
+
+建立環境 pip install -r requirements.txt  
+[requirements](requirements.txt)  
 
 
 ## 1.資料前處理  
@@ -76,7 +78,11 @@
         features.append(mfcc(audio, sr, numcep=mfcc_dim, nfft=551))
         # nfft : FFT大小
         # highfreq : 最高頻帶邊緣，將超出的雜訊移除，可自行新增
-  
+#### Audio Signal  
+![image](images/AudioSignal.png)  
+#### MFCC 
+![image](images/MFCC.png)  
+
 ### 標準化  
     # 避免出現權重比例失衡 造成難以收斂
     samples = random.sample(features, 100)
