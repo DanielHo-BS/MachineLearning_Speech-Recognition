@@ -219,6 +219,7 @@
     lr_decay = ReduceLROnPlateau(monitor='loss', factor=0.2, patience=1, min_lr=0.000)
   
 ### model Summary  
+[Summary](modelSummary.txt)
 ![image](images/summary.png)
     
 ## 3.效果評估  
