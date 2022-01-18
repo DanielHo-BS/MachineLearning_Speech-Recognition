@@ -1,0 +1,8 @@
+## dataset
+train/
+train_txt/
+test-shuf/
+
+
+## model
+*.h5
