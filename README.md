@@ -219,14 +219,15 @@
     lr_decay = ReduceLROnPlateau(monitor='loss', factor=0.2, patience=1, min_lr=0.000)
   
 ### model Summary  
-[Summary](modelSummary.txt)
-![image](images/summary.png)
+[The model Summary](modelSummary.txt)  
+![image](images/summary.png)  
     
 ## 3.效果評估  
 
 ### 使用Loss 進行評估   
-使用SGD，可以觀察到valid，會出現較大的震盪。
+使用SGD，可以觀察到valid，會出現較大的震盪。  
 可觀察到valid的loss沒有下降太多，因為使用CTC會使input與output長度相等，導致預測結果會產生-1，以補足輸出長度，最後造成loss計算上的偏差。  
+
     train_loss = history.history['loss']
     valid_loss = history.history['val_loss']
     plt.plot(np.linspace(1, epochs, epochs), train_loss, label='train')
