@@ -1,8 +1,8 @@
 # Kaggle：Automatic-Speech-Recognition  
 使用CTC LOSS  
 以Python撰寫  
-> [Training model](main.ipynb)
-> [Testing](test.ipynb)
+> [Training model](main.ipynb)  
+> [Testing](test.ipynb)  
 
 步驟
 --
