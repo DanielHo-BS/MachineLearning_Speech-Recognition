@@ -263,7 +263,7 @@
     -- gua ma si kang khuan 
   
 ### Kaggle Leaderboard
-    Kaggle：Private Leaderboard (*/137)
+    Kaggle：Private Leaderboard (50/132)
 ![image](images/Leaderboard.png) 
   
    
